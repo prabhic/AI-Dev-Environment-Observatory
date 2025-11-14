@@ -1,0 +1,7 @@
+anthropic>=0.39.0
+pydantic>=2.0.0
+pyyaml>=6.0
+gitpython>=3.1.0
+click>=8.1.0
+rich>=13.0.0
+pathspec>=0.12.0

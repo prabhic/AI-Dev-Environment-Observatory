@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cross-Pattern Schema v1",
+  "description": "Schema for patterns identified across multiple repositories",
+  "type": "object",
+  "required": ["pattern_id", "name", "category", "description", "implementations"],
+  "properties": {
+    "pattern_id": {
+      "type": "string",
+      "description": "Unique pattern identifier"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable pattern name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "llm_integration",
+        "context_management",
+        "streaming",
+        "tool_calling",
+        "diff_application",
+        "file_operations",
+        "state_management",
+        "extension_architecture",
+        "agent_architecture",
+        "error_handling"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed pattern description"
+    },
+    "implementations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["repo_id", "approach"],
+        "properties": {
+          "repo_id": {"type": "string"},
+          "approach": {"type": "string"},
+          "file_path": {"type": "string"},
+          "code_snippet": {"type": "string"},
+          "maturity": {
+            "type": "string",
+            "enum": ["experimental", "stable", "production"]
+          }
+        }
+      }
+    },
+    "evolution": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date": {"type": "string", "format": "date"},
+          "change": {"type": "string"}
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "first_seen": {"type": "string", "format": "date"},
+        "prevalence": {
+          "type": "integer",
+          "description": "Number of repos implementing this pattern"
+        },
+        "maturity": {
+          "type": "string",
+          "enum": ["emerging", "established", "standard"]
+        }
+      }
+    }
+  }
+}

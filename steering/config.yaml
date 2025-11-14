@@ -1,0 +1,64 @@
+# =======================================================
+# AI-IDE OBSERVATORY - STEERING CONFIGURATION
+# =======================================================
+# This is YOUR control panel. Change behavior here, not in code.
+
+version: "1.0"
+
+# Analysis Configuration
+analysis:
+  mode: "full"  # full | incremental | targeted
+  llm_provider: "anthropic"  # anthropic | openai | local
+  llm_model: "claude-sonnet-4"
+  max_files_per_repo: 100
+  cache_enabled: true
+  parallel_analysis: false  # [Future] true for speed
+  file_size_limit_kb: 500  # Skip files larger than this
+
+# Repository Selection
+registry:
+  source: "registry/repos.yaml"
+  auto_update_repos: false  # [Future] Git pull before analysis
+
+# Intelligence Layer
+intelligence:
+  prompt_version: "v1"
+  enable_pattern_detection: true
+  enable_evolution_tracking: false  # [Future]
+  confidence_threshold: 0.7
+  max_tokens: 4096
+  temperature: 0.3  # Lower for more consistent analysis
+
+# Storage
+storage:
+  format: "json"  # json | sqlite | postgres
+  versioning: true
+  retention_days: 0  # 0 = keep forever
+  base_path: "storage"
+
+# Web UI
+web:
+  mode: "static"  # static | dynamic
+  base_path: "web"
+  enable_api: false  # [Future]
+  port: 3000
+
+# Monitoring [Future]
+monitoring:
+  enabled: false
+  check_interval_hours: 24
+  alert_on_new_patterns: false
+  webhook_url: ""
+
+# Growth Switches (off for MVP, easy to enable)
+experimental:
+  auto_discovery: false
+  ml_pattern_detection: false
+  github_webhooks: false
+  community_contributions: false
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG | INFO | WARNING | ERROR
+  file: "observatory.log"
+  console: true

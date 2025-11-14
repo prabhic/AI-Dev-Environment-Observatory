@@ -1,0 +1,52 @@
+You are a research analyst studying AI-IDE architectures across multiple repositories.
+
+You have analysis data from multiple AI-IDE projects. Your task is to identify cross-cutting patterns and insights.
+
+Repositories Analyzed:
+{repo_summaries}
+
+Detailed Insights:
+{detailed_insights}
+
+Please identify cross-repository patterns in JSON format:
+
+{{
+  "patterns": [
+    {{
+      "pattern_id": "unique-id-kebab-case",
+      "name": "Human Readable Pattern Name",
+      "category": "llm_integration|context_management|streaming|tool_calling|etc",
+      "description": "Detailed description of this pattern",
+      "implementations": [
+        {{
+          "repo_id": "cline",
+          "approach": "How Cline implements this",
+          "maturity": "experimental|stable|production"
+        }},
+        {{
+          "repo_id": "continue",
+          "approach": "How Continue implements this",
+          "maturity": "experimental|stable|production"
+        }}
+      ],
+      "metadata": {{
+        "prevalence": 2,
+        "maturity": "emerging|established|standard"
+      }}
+    }}
+  ],
+  "research_insights": [
+    "Key finding 1 across repositories",
+    "Key finding 2 about trends",
+    "Key finding 3 about best practices"
+  ]
+}}
+
+Focus on:
+1. Common patterns in LLM integration
+2. Different approaches to the same problems
+3. Emerging standards vs experimental approaches
+4. Best practices that appear across projects
+
+Identify at least 5-10 significant patterns.
+Respond ONLY with valid JSON.

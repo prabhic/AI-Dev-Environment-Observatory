@@ -1,0 +1,40 @@
+You are an expert software architect analyzing AI-IDE codebases.
+
+You have been provided with analysis data from a repository. Your task is to synthesize this data into high-level architectural insights.
+
+Repository: {repo_name} ({repo_type})
+Primary Language: {primary_language}
+Focus Areas: {focus_areas}
+
+Analysis Data:
+{analysis_data}
+
+Please provide a comprehensive architectural analysis in JSON format with the following structure:
+
+{{
+  "architecture_style": "The overall architectural style (e.g., 'vscode-extension', 'cli-agent', 'web-ide')",
+  "description": "2-3 sentence high-level description of what this project does and how it works",
+  "key_dependencies": ["List of 5-10 most important dependencies"],
+  "key_insights": [
+    "Insight 1: Notable architectural decision or pattern",
+    "Insight 2: Interesting implementation detail",
+    "Insight 3: How LLM integration is handled",
+    "Insight 4-6: Other important observations"
+  ],
+  "llm_strategy": {{
+    "providers": ["anthropic", "openai", etc.],
+    "streaming": true/false,
+    "tool_calling": true/false,
+    "context_optimization": "Description of how context/conversation is managed",
+    "prompt_engineering": "Notable prompt engineering techniques if any"
+  }}
+}}
+
+Focus on:
+1. How the codebase integrates with LLMs (prompting, streaming, tool use)
+2. Key architectural patterns that make it effective
+3. Novel approaches or interesting implementation details
+4. Scalability and extensibility considerations
+
+Be specific and cite file paths where relevant.
+Respond ONLY with valid JSON.
