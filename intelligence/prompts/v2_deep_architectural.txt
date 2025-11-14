@@ -1,0 +1,153 @@
+You are analyzing AI-IDE codebases to extract ACTIONABLE architectural insights.
+
+Your goal: Help developers understand the KEY DECISIONS and TRADEOFFS in building AI-powered development tools.
+
+Repository: {repo_name} ({repo_type})
+Analysis Data: {analysis_data}
+
+Focus on answering these SPECIFIC questions:
+
+## 1. LLM Integration Architecture
+
+**How is the LLM integration structured?**
+- Which providers? (Anthropic, OpenAI, local models)
+- Streaming vs batch responses?
+- How are API calls wrapped/abstracted?
+- Error handling strategy for LLM failures?
+- Rate limiting/retry logic?
+
+**Extract code example** showing the core LLM call pattern.
+
+## 2. Context Management Strategy
+
+**THE CRITICAL PROBLEM: Context window limits**
+
+How does this codebase solve it?
+- What's the strategy? (truncate, summarize, sliding window, RAG)
+- When does context get trimmed?
+- What information is prioritized?
+- Any clever optimizations?
+
+**Extract code example** of context management logic.
+
+## 3. Tool/Function Calling
+
+If tool calling is used:
+- How are tools defined? (function schemas, JSON, other)
+- How is tool execution handled?
+- Safety mechanisms? (validation, sandboxing)
+- How are tool results fed back to LLM?
+
+**Extract code example** of tool definition and execution.
+
+## 4. Critical Path: Applying AI Edits
+
+**THE HARDEST PROBLEM: Reliably applying LLM-generated code changes**
+
+What's the approach?
+- Diff format? (unified diff, search/replace, line-based)
+- How are conflicts handled?
+- Validation before applying?
+- Rollback mechanism?
+
+**Extract code example** of edit application logic.
+
+## 5. Architecture Patterns
+
+Identify SPECIFIC architectural patterns:
+- State management (Redux, Context, MobX, custom)
+- Event system (EventEmitter, pub/sub, observables)
+- Extension points (plugin system, middleware)
+- Concurrency model (async/await, workers, queues)
+
+## 6. Key Tradeoffs & Decisions
+
+What are the 3-5 MOST IMPORTANT architectural decisions?
+
+For each, explain:
+- What was decided (the choice made)
+- Why it matters (impact on user experience, performance, reliability)
+- Tradeoff (what was gained vs what was sacrificed)
+
+Example:
+"Decision: Use streaming responses
+Why: Provides instant feedback, better UX for long generations
+Tradeoff: More complex error handling, can't retry easily
+Evidence: [file path:line number]"
+
+## 7. Novel/Interesting Approaches
+
+What's UNIQUE or CLEVER about this implementation?
+- Any innovative solutions?
+- Patterns not seen in other AI-IDEs?
+- Performance optimizations?
+
+## OUTPUT FORMAT (JSON):
+
+{{
+  "llm_integration": {{
+    "architecture": "Description of how LLM calls are structured",
+    "providers": ["anthropic", "openai"],
+    "streaming": true,
+    "key_abstraction": "Name/description of core abstraction",
+    "code_example": {{
+      "file": "path/to/file.ts",
+      "lines": "50-75",
+      "snippet": "actual code showing pattern"
+    }}
+  }},
+  "context_management": {{
+    "strategy": "truncate|summarize|sliding_window|rag",
+    "description": "Detailed explanation of how it works",
+    "trigger_points": "When context gets trimmed",
+    "code_example": {{...}}
+  }},
+  "tool_calling": {{
+    "enabled": true,
+    "schema_format": "How tools are defined",
+    "safety_mechanisms": ["validation", "sandboxing"],
+    "code_example": {{...}}
+  }},
+  "edit_application": {{
+    "diff_format": "search_replace|unified_diff|line_based",
+    "description": "How edits are applied",
+    "conflict_resolution": "Strategy for conflicts",
+    "code_example": {{...}}
+  }},
+  "architecture_patterns": [
+    {{
+      "pattern": "Observer Pattern",
+      "usage": "How it's used",
+      "location": "file:line"
+    }}
+  ],
+  "key_decisions": [
+    {{
+      "decision": "What was decided",
+      "rationale": "Why it matters",
+      "tradeoff": "What was gained vs sacrificed",
+      "evidence": "file:line"
+    }}
+  ],
+  "novel_approaches": [
+    {{
+      "innovation": "What's unique",
+      "description": "How it works",
+      "impact": "Why it's valuable"
+    }}
+  ],
+  "key_insights": [
+    "Insight 1: Specific, actionable observation with evidence",
+    "Insight 2: Comparison to standard approaches",
+    "Insight 3: Tradeoff analysis"
+  ]
+}}
+
+**CRITICAL**:
+- Be SPECIFIC with file paths and line numbers
+- Include ACTUAL code snippets (not descriptions)
+- Focus on TRADEOFFS and DECISIONS, not just features
+- Answer "WHY" and "WHAT'S THE ALTERNATIVE" not just "WHAT"
+- Evidence over speculation
+
+Respond ONLY with valid JSON.

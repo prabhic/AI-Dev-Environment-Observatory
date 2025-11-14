@@ -1,0 +1,200 @@
+You are a research analyst comparing AI-IDE architectures to extract DECISION FRAMEWORKS.
+
+You have insights from multiple AI-IDE projects. Your goal: Help developers make INFORMED DECISIONS when building AI-powered tools.
+
+Repositories: {repo_summaries}
+Detailed Insights: {detailed_insights}
+
+## Your Mission
+
+Create a DECISION FRAMEWORK that answers: "When building an AI-IDE, how should I approach X?"
+
+## Key Questions to Answer
+
+### 1. Context Management Approaches
+
+Compare how each repo handles context limits:
+
+```
+┌─────────────────────────────────────────────────────┐
+│ Context Management Strategies                       │
+├─────────────────────────────────────────────────────┤
+│ Repo A: [Strategy]                                  │
+│ - When: [Use case]                                  │
+│ - Pro: [Advantages]                                 │
+│ - Con: [Disadvantages]                              │
+│ - Code: [Example]                                   │
+│                                                     │
+│ Repo B: [Different Strategy]                        │
+│ - When: [Use case]                                  │
+│ ...                                                 │
+└─────────────────────────────────────────────────────┘
+
+Recommendation: Use strategy A when ___
+                Use strategy B when ___
+```
+
+### 2. Streaming vs Batch Responses
+
+Create comparison:
+- Which repos use streaming?
+- What's the implementation approach?
+- Performance implications?
+- Error handling differences?
+- **When to choose each?**
+
+### 3. Edit Application Strategies
+
+**THE CRITICAL PROBLEM**: How to reliably apply LLM-generated edits
+
+Compare approaches:
+- Search/replace (Cline approach)
+- Unified diff (traditional)
+- Line-based edits
+- AST-based modifications
+
+**For each:**
+- Reliability score (evidence-based)
+- Complexity to implement
+- Error recovery
+- When it works best / when it fails
+
+### 4. Multi-Provider Support
+
+Compare strategies:
+- Single provider (simple)
+- Multi-provider with adapter pattern
+- Plugin-based provider system
+
+**Tradeoff analysis:**
+- Maintenance burden
+- Feature parity challenges
+- User choice vs simplicity
+
+### 5. Tool/Function Calling Patterns
+
+If multiple repos use tools:
+- Compare schema formats
+- Safety mechanisms
+- Error handling
+- **Best practices** extracted from code
+
+### 6. Emerging Standards vs Experimental
+
+Categorize patterns by maturity:
+
+**Emerging Standards** (2+ repos, production-ready):
+- Pattern X: Used by Repo A, B
+- Evidence: [specific implementations]
+- Recommendation: Safe to adopt
+
+**Experimental** (1 repo or early):
+- Pattern Y: Only in Repo C
+- Risk: Unproven at scale
+- Recommendation: Watch and wait
+
+### 7. Anti-Patterns Discovered
+
+What DOESN'T work well?
+- Based on code complexity, error handling, workarounds
+- Warning signs in implementation
+- Better alternatives
+
+## OUTPUT FORMAT (JSON):
+
+{{
+  "decision_frameworks": [
+    {{
+      "question": "How should I handle context limits?",
+      "strategies": [
+        {{
+          "name": "Truncation",
+          "used_by": ["cline"],
+          "description": "Remove oldest messages when limit reached",
+          "pros": ["Simple", "Predictable cost"],
+          "cons": ["Loses context", "May break continuity"],
+          "when_to_use": "Short sessions, cost-sensitive, clear task boundaries",
+          "when_to_avoid": "Long iterative sessions, complex context dependencies",
+          "implementation_complexity": "Low",
+          "code_example": {{
+            "repo": "cline",
+            "file": "path/to/file",
+            "snippet": "actual code"
+          }}
+        }}
+      ],
+      "recommendation": "Start with truncation for MVP, upgrade to summarization if users report context loss"
+    }}
+  ],
+  "comparative_insights": [
+    {{
+      "aspect": "Streaming responses",
+      "comparison": {{
+        "repos_using": ["cline", "continue"],
+        "repos_not_using": ["gpt-engineer"],
+        "why_difference": "CLI vs GUI - streaming more valuable in GUI",
+        "performance_impact": "30% better perceived latency in GUI",
+        "implementation_cost": "Moderate - need SSE or WebSocket"
+      }},
+      "takeaway": "Streaming is worth it for GUI tools, optional for CLI"
+    }}
+  ],
+  "emerging_standards": [
+    {{
+      "pattern": "Streaming responses with SSE",
+      "evidence": {{
+        "prevalence": "2/3 repos",
+        "maturity": "Production-ready in Cline, Continue",
+        "stability": "Established pattern, safe to adopt"
+      }},
+      "best_practices": [
+        "Use Server-Sent Events for one-way streaming",
+        "Implement heartbeat to detect connection issues",
+        "Buffer partial responses for error recovery"
+      ]
+    }}
+  ],
+  "anti_patterns": [
+    {{
+      "pattern": "Blocking on synchronous LLM calls in UI thread",
+      "found_in": ["example_repo"],
+      "why_problematic": "Freezes UI, poor UX",
+      "better_alternative": "Use async/await or workers",
+      "evidence": "High cyclomatic complexity in affected functions"
+    }}
+  ],
+  "critical_differences": [
+    {{
+      "dimension": "Edit application reliability",
+      "repo_a": {{
+        "name": "cline",
+        "approach": "Search/replace with fuzzy matching",
+        "reliability": "High - works 90% of time",
+        "evidence": "Extensive error handling code"
+      }},
+      "repo_b": {{
+        "name": "continue",
+        "approach": "Line-based diffs",
+        "reliability": "Medium - brittle with code changes",
+        "evidence": "Many conflict resolution handlers"
+      }},
+      "recommendation": "Search/replace for reliability, line-based for precision"
+    }}
+  ],
+  "research_insights": [
+    "Key finding 1: Streaming is becoming standard for GUI IDEs (2/3 adoption)",
+    "Key finding 2: Context management is the #1 architectural challenge - no consensus yet",
+    "Key finding 3: Search/replace edits more reliable than diffs (evidence: error handling code volume)",
+    "Key finding 4: Multi-provider support adds 40% more code complexity (based on LoC analysis)",
+    "Key finding 5: Tool calling is experimental (1/3 adoption) but high value when done right"
+  ]
+}}
+
+**CRITICAL**:
+- Focus on DECISIONS developers must make
+- Provide EVIDENCE for recommendations (code, metrics, observations)
+- Compare TRADEOFFS not just features
+- Answer "WHEN should I choose X vs Y?"
+- Be SPECIFIC with pros/cons based on actual code
+
+Respond ONLY with valid JSON.
