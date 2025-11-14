@@ -1,0 +1,408 @@
+{
+  "repo_id": "cline",
+  "analyzed_at": "2025-11-14 21:41:55.731119",
+  "version": "1.0",
+  "architecture_style": "vscode-extension",
+  "primary_language": "typescript",
+  "key_dependencies": [],
+  "description": "AI-IDE project: Cline (formerly Claude Dev)",
+  "components": [
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "package.json",
+      "key_patterns": [
+        "streaming",
+        "event_driven"
+      ],
+      "complexity": "high",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "tsconfig.json",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "testing-platform/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "testing-platform/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "testing-platform/index.ts",
+      "key_patterns": [
+        "async_programming",
+        "functional_programming"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "evals/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "evals/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "docs/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "cli/package.json",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "webview-ui/package.json",
+      "key_patterns": [
+        "event_driven"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "webview-ui/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "extension",
+      "purpose": "extension_core",
+      "file_path": "src/extension.ts",
+      "key_patterns": [
+        "async_programming",
+        "streaming",
+        "event_driven",
+        "object_oriented",
+        "functional_programming"
+      ],
+      "complexity": "high",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "api",
+      "purpose": "extension_core",
+      "file_path": "src/shared/api.ts",
+      "key_patterns": [
+        "functional_programming"
+      ],
+      "complexity": "high",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/exports/index.ts",
+      "key_patterns": [
+        "async_programming",
+        "event_driven",
+        "functional_programming"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "main",
+      "purpose": "entry_point",
+      "file_path": "webview-ui/.storybook/main.ts",
+      "key_patterns": [
+        "async_programming",
+        "functional_programming"
+      ],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "standalone/runtime-files/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "evals/cli/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/services/tree-sitter/index.ts",
+      "key_patterns": [
+        "async_programming",
+        "functional_programming"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/services/feature-flags/index.ts",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/services/telemetry/index.ts",
+      "key_patterns": [
+        "async_programming",
+        "functional_programming"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/services/ripgrep/index.ts",
+      "key_patterns": [
+        "async_programming",
+        "functional_programming"
+      ],
+      "complexity": "high",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/services/error/index.ts",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/integrations/checkpoints/index.ts",
+      "key_patterns": [
+        "async_programming",
+        "event_driven",
+        "object_oriented",
+        "functional_programming"
+      ],
+      "complexity": "high",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/integrations/diagnostics/index.ts",
+      "key_patterns": [
+        "async_programming",
+        "functional_programming"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/integrations/notifications/index.ts",
+      "key_patterns": [
+        "async_programming"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "api",
+      "purpose": "api_service",
+      "file_path": "src/shared/cline/api.ts",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/shared/remote-config/index.ts",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "chat.test",
+      "purpose": "llm_integration",
+      "file_path": "src/test/e2e/chat.test.ts",
+      "key_patterns": [
+        "async_programming",
+        "functional_programming"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/core/workspace/index.ts",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "src/core/webview/index.ts",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    }
+  ],
+  "llm_strategy": {
+    "providers": [
+      "anthropic",
+      "google",
+      "openai",
+      "local"
+    ],
+    "streaming": true,
+    "tool_calling": true,
+    "context_optimization": "context_compression, context_window_management, conversation_memory",
+    "prompt_engineering": null
+  },
+  "patterns": [
+    {
+      "name": "streaming_responses",
+      "category": "llm_integration",
+      "description": "Detected 18 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "tool_calling",
+      "category": "llm_integration",
+      "description": "Detected 17 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "context_management",
+      "category": "context_management",
+      "description": "Detected 14 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "diff_application",
+      "category": "file_operations",
+      "description": "Detected 16 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "file_operations",
+      "category": "file_operations",
+      "description": "Detected 9 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "event_driven",
+      "category": "concurrency",
+      "description": "Detected 10 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "state_management",
+      "category": "state_management",
+      "description": "Detected 18 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "async_execution",
+      "category": "concurrency",
+      "description": "Detected 21 times",
+      "code_example": null,
+      "prevalence": 1
+    }
+  ],
+  "key_insights": [
+    "Analysis performed without LLM synthesis",
+    "Detected 8 patterns",
+    "Analyzed 30 components"
+  ],
+  "analysis_metadata": {
+    "files_analyzed": 0,
+    "llm_calls": 0,
+    "confidence": 0.0,
+    "analysis_duration_seconds": 0
+  },
+  "evolution_data": null
+}

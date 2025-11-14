@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-11-14",
+  "total_repos": 3,
+  "repositories": [
+    {
+      "id": "cline",
+      "name": "Cline (formerly Claude Dev)",
+      "url": "https://github.com/cline/cline",
+      "type": "vscode-extension",
+      "language": "typescript",
+      "focus_areas": [
+        "llm_integration",
+        "diff_application",
+        "tool_use"
+      ],
+      "analysis_priority": "high",
+      "tags": [
+        "agentic",
+        "vscode",
+        "anthropic"
+      ],
+      "last_analyzed": null,
+      "health_status": null
+    },
+    {
+      "id": "continue",
+      "name": "Continue",
+      "url": "https://github.com/continuedev/continue",
+      "type": "multi-ide-extension",
+      "language": "typescript",
+      "focus_areas": [
+        "multi_provider",
+        "context_management",
+        "autocomplete"
+      ],
+      "analysis_priority": "high",
+      "tags": [
+        "vscode",
+        "jetbrains",
+        "multi-llm"
+      ],
+      "last_analyzed": null,
+      "health_status": null
+    },
+    {
+      "id": "gpt-engineer",
+      "name": "GPT Engineer",
+      "url": "https://github.com/AntonOsika/gpt-engineer",
+      "type": "cli-agent",
+      "language": "python",
+      "focus_areas": [
+        "autonomous_coding",
+        "project_generation",
+        "prompt_engineering"
+      ],
+      "analysis_priority": "medium",
+      "tags": [
+        "cli",
+        "autonomous",
+        "openai"
+      ],
+      "last_analyzed": null,
+      "health_status": null
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "repo_id": "gpt-engineer",
+  "analyzed_at": "2025-11-14 21:43:52.069302",
+  "version": "1.0",
+  "architecture_style": "cli-agent",
+  "primary_language": "python",
+  "key_dependencies": [],
+  "description": "AI-IDE project: GPT Engineer",
+  "components": [
+    {
+      "name": "pyproject",
+      "purpose": "configuration",
+      "file_path": "pyproject.toml",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "__init__",
+      "purpose": "other",
+      "file_path": "gpt_engineer/__init__.py",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "chat_to_files",
+      "purpose": "llm_integration",
+      "file_path": "gpt_engineer/core/chat_to_files.py",
+      "key_patterns": [],
+      "complexity": "high",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "ai",
+      "purpose": "llm_integration",
+      "file_path": "gpt_engineer/core/ai.py",
+      "key_patterns": [
+        "streaming",
+        "object_oriented"
+      ],
+      "complexity": "high",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "main",
+      "purpose": "entry_point",
+      "file_path": "projects/example-improve/main.py",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "main",
+      "purpose": "entry_point",
+      "file_path": "gpt_engineer/applications/cli/main.py",
+      "key_patterns": [],
+      "complexity": "high",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": ".pre-commit-config",
+      "purpose": "configuration",
+      "file_path": ".pre-commit-config.yaml",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "docker-compose",
+      "purpose": "configuration",
+      "file_path": "docker-compose.yml",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "sweep",
+      "purpose": "configuration",
+      "file_path": "sweep.yaml",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": ".readthedocs",
+      "purpose": "configuration",
+      "file_path": ".readthedocs.yaml",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "mock_ai",
+      "purpose": "llm_integration",
+      "file_path": "tests/mock_ai.py",
+      "key_patterns": [
+        "object_oriented"
+      ],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "ai_cache",
+      "purpose": "extension_core",
+      "file_path": "tests/ai_cache.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "test_project_config",
+      "purpose": "other",
+      "file_path": "tests/test_project_config.py",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "test_install",
+      "purpose": "other",
+      "file_path": "tests/test_install.py",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "create_api_rst",
+      "purpose": "api_service",
+      "file_path": "docs/create_api_rst.py",
+      "key_patterns": [
+        "async_programming",
+        "object_oriented"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "conf",
+      "purpose": "other",
+      "file_path": "docs/conf.py",
+      "key_patterns": [],
+      "complexity": "high",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "print_chat",
+      "purpose": "llm_integration",
+      "file_path": "scripts/print_chat.py",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "clean_benchmarks",
+      "purpose": "other",
+      "file_path": "scripts/clean_benchmarks.py",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "legacy_benchmark",
+      "purpose": "other",
+      "file_path": "scripts/legacy_benchmark.py",
+      "key_patterns": [
+        "streaming"
+      ],
+      "complexity": "high",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "test_api",
+      "purpose": "api_service",
+      "file_path": "scripts/test_api.py",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "FUNDING",
+      "purpose": "configuration",
+      "file_path": ".github/FUNDING.yml",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "run",
+      "purpose": "other",
+      "file_path": "gpt_engineer/benchmark/run.py",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "default_bench_config",
+      "purpose": "configuration",
+      "file_path": "gpt_engineer/benchmark/default_bench_config.toml",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "types",
+      "purpose": "other",
+      "file_path": "gpt_engineer/benchmark/types.py",
+      "key_patterns": [
+        "object_oriented"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "bench_config",
+      "purpose": "other",
+      "file_path": "gpt_engineer/benchmark/bench_config.py",
+      "key_patterns": [
+        "object_oriented"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "__main__",
+      "purpose": "entry_point",
+      "file_path": "gpt_engineer/benchmark/__main__.py",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    }
+  ],
+  "llm_strategy": {
+    "providers": [
+      "anthropic",
+      "openai"
+    ],
+    "streaming": true,
+    "tool_calling": true,
+    "context_optimization": "context_window_management, conversation_memory",
+    "prompt_engineering": null
+  },
+  "patterns": [
+    {
+      "name": "streaming_responses",
+      "category": "llm_integration",
+      "description": "Detected 21 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "tool_calling",
+      "category": "llm_integration",
+      "description": "Detected 12 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "diff_application",
+      "category": "file_operations",
+      "description": "Detected 10 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "file_operations",
+      "category": "file_operations",
+      "description": "Detected 1 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "state_management",
+      "category": "state_management",
+      "description": "Detected 10 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "context_management",
+      "category": "context_management",
+      "description": "Detected 11 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "async_execution",
+      "category": "concurrency",
+      "description": "Detected 1 times",
+      "code_example": null,
+      "prevalence": 1
+    }
+  ],
+  "key_insights": [
+    "Analysis performed without LLM synthesis",
+    "Detected 7 patterns",
+    "Analyzed 26 components"
+  ],
+  "analysis_metadata": {
+    "files_analyzed": 0,
+    "llm_calls": 0,
+    "confidence": 0.0,
+    "analysis_duration_seconds": 0
+  },
+  "evolution_data": null
+}

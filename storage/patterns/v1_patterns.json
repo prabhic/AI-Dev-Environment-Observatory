@@ -1,0 +1,194 @@
+{
+  "version": "v1",
+  "generated_at": "2025-11-14T21:43:52.070774",
+  "patterns": [
+    {
+      "pattern_id": "streaming_responses",
+      "name": "streaming_responses",
+      "category": "llm_integration",
+      "description": "Pattern found across 3 repositories",
+      "implementations": [
+        {
+          "repo_id": "cline",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "gpt-engineer",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "continue",
+          "approach": "Detected in code analysis"
+        }
+      ],
+      "metadata": {
+        "prevalence": 3,
+        "maturity": "established"
+      }
+    },
+    {
+      "pattern_id": "tool_calling",
+      "name": "tool_calling",
+      "category": "llm_integration",
+      "description": "Pattern found across 3 repositories",
+      "implementations": [
+        {
+          "repo_id": "cline",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "gpt-engineer",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "continue",
+          "approach": "Detected in code analysis"
+        }
+      ],
+      "metadata": {
+        "prevalence": 3,
+        "maturity": "established"
+      }
+    },
+    {
+      "pattern_id": "context_management",
+      "name": "context_management",
+      "category": "context_management",
+      "description": "Pattern found across 3 repositories",
+      "implementations": [
+        {
+          "repo_id": "cline",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "gpt-engineer",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "continue",
+          "approach": "Detected in code analysis"
+        }
+      ],
+      "metadata": {
+        "prevalence": 3,
+        "maturity": "established"
+      }
+    },
+    {
+      "pattern_id": "diff_application",
+      "name": "diff_application",
+      "category": "file_operations",
+      "description": "Pattern found across 3 repositories",
+      "implementations": [
+        {
+          "repo_id": "cline",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "gpt-engineer",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "continue",
+          "approach": "Detected in code analysis"
+        }
+      ],
+      "metadata": {
+        "prevalence": 3,
+        "maturity": "established"
+      }
+    },
+    {
+      "pattern_id": "file_operations",
+      "name": "file_operations",
+      "category": "file_operations",
+      "description": "Pattern found across 3 repositories",
+      "implementations": [
+        {
+          "repo_id": "cline",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "gpt-engineer",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "continue",
+          "approach": "Detected in code analysis"
+        }
+      ],
+      "metadata": {
+        "prevalence": 3,
+        "maturity": "established"
+      }
+    },
+    {
+      "pattern_id": "event_driven",
+      "name": "event_driven",
+      "category": "concurrency",
+      "description": "Pattern found across 2 repositories",
+      "implementations": [
+        {
+          "repo_id": "cline",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "continue",
+          "approach": "Detected in code analysis"
+        }
+      ],
+      "metadata": {
+        "prevalence": 2,
+        "maturity": "emerging"
+      }
+    },
+    {
+      "pattern_id": "state_management",
+      "name": "state_management",
+      "category": "state_management",
+      "description": "Pattern found across 3 repositories",
+      "implementations": [
+        {
+          "repo_id": "cline",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "gpt-engineer",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "continue",
+          "approach": "Detected in code analysis"
+        }
+      ],
+      "metadata": {
+        "prevalence": 3,
+        "maturity": "established"
+      }
+    },
+    {
+      "pattern_id": "async_execution",
+      "name": "async_execution",
+      "category": "concurrency",
+      "description": "Pattern found across 3 repositories",
+      "implementations": [
+        {
+          "repo_id": "cline",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "gpt-engineer",
+          "approach": "Detected in code analysis"
+        },
+        {
+          "repo_id": "continue",
+          "approach": "Detected in code analysis"
+        }
+      ],
+      "metadata": {
+        "prevalence": 3,
+        "maturity": "established"
+      }
+    }
+  ]
+}

@@ -1,0 +1,370 @@
+{
+  "repo_id": "continue",
+  "analyzed_at": "2025-11-14 21:43:49.073484",
+  "version": "1.0",
+  "architecture_style": "multi-ide-extension",
+  "primary_language": "typescript",
+  "key_dependencies": [],
+  "description": "AI-IDE project: Continue",
+  "components": [
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "core/package.json",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "core/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "docs/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "gui/package.json",
+      "key_patterns": [
+        "event_driven"
+      ],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "gui/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "binary/package.json",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "binary/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "Cargo",
+      "purpose": "configuration",
+      "file_path": "sync/Cargo.toml",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "binary/src/index.ts",
+      "key_patterns": [
+        "async_programming",
+        "streaming",
+        "functional_programming"
+      ],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "packages/openai-adapters/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "packages/openai-adapters/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "packages/config-types/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "packages/config-types/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "packages/continue-sdk/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "packages/continue-sdk/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "packages/terminal-security/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "packages/terminal-security/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "packages/llm-info/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "packages/llm-info/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "packages/config-yaml/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "packages/config-yaml/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "packages/fetch/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "packages/fetch/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "packages/hub/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "tsconfig",
+      "purpose": "configuration",
+      "file_path": "packages/hub/tsconfig.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "index",
+      "purpose": "entry_point",
+      "file_path": "scripts/util/index.js",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "manual-testing-sandbox/nested-folder/package.json",
+      "key_patterns": [],
+      "complexity": "low",
+      "reusability_score": 5,
+      "llm_integration": null
+    },
+    {
+      "name": "package",
+      "purpose": "configuration",
+      "file_path": "extensions/cli/package.json",
+      "key_patterns": [],
+      "complexity": "medium",
+      "reusability_score": 5,
+      "llm_integration": null
+    }
+  ],
+  "llm_strategy": {
+    "providers": [
+      "anthropic",
+      "cohere",
+      "google",
+      "local",
+      "openai"
+    ],
+    "streaming": true,
+    "tool_calling": true,
+    "context_optimization": "context_window_management",
+    "prompt_engineering": null
+  },
+  "patterns": [
+    {
+      "name": "event_driven",
+      "category": "concurrency",
+      "description": "Detected 15 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "context_management",
+      "category": "context_management",
+      "description": "Detected 8 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "diff_application",
+      "category": "file_operations",
+      "description": "Detected 7 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "async_execution",
+      "category": "concurrency",
+      "description": "Detected 8 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "state_management",
+      "category": "state_management",
+      "description": "Detected 10 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "tool_calling",
+      "category": "llm_integration",
+      "description": "Detected 7 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "streaming_responses",
+      "category": "llm_integration",
+      "description": "Detected 17 times",
+      "code_example": null,
+      "prevalence": 1
+    },
+    {
+      "name": "file_operations",
+      "category": "file_operations",
+      "description": "Detected 3 times",
+      "code_example": null,
+      "prevalence": 1
+    }
+  ],
+  "key_insights": [
+    "Analysis performed without LLM synthesis",
+    "Detected 8 patterns",
+    "Analyzed 30 components"
+  ],
+  "analysis_metadata": {
+    "files_analyzed": 0,
+    "llm_calls": 0,
+    "confidence": 0.0,
+    "analysis_duration_seconds": 0
+  },
+  "evolution_data": null
+}
